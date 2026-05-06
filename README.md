@@ -1,8 +1,8 @@
-# 🤖 AITalk - Sistema Inteligente de Atención al Cliente (n8n)
+# 🤖 AITalk - Sistema Inteligente de Atención al Cliente n8n
 
 **AITalk** es un sistema automatizado e inteligente de atención al cliente diseñado para el sector de la hostelería (cadenas de restaurantes). Basado en una arquitectura de IA agéntica, este proyecto implementa un asistente virtual capaz de gestionar reservas, responder consultas sobre el menú y alérgenos, y mantener una conversación fluida en lenguaje natural a través de Telegram.
 
-Este repositorio contiene los flujos de trabajo (workflows) principales desarrollados e implementados sobre el orquestador **n8n**.
+Este repositorio contiene los flujos de trabajo principales desarrollados e implementados sobre el orquestador **n8n**.
 
 ---
 
@@ -32,7 +32,7 @@ El core de la aplicación está construido mediante una arquitectura basada en n
 
 ---
 
-## 🏗️ Estructura del Flujo de n8n (Workflow)
+## 🏗️ Estructura del Flujo de n8n
 
 El flujo de trabajo principal de AITalk se divide en los siguientes módulos lógicos:
 
