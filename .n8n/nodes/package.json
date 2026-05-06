@@ -1,0 +1,8 @@
+{
+  "name": "installed-nodes",
+  "private": true,
+  "dependencies": {
+    "@elevenlabs/n8n-nodes-elevenlabs": "0.2.3",
+    "@cloudconvert/n8n-nodes-cloudconvert": "1.1.1"
+  }
+}
