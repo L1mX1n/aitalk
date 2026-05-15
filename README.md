@@ -1,25 +1,25 @@
-# 🤖 AITalk - Sistema Inteligente de Atención al Cliente n8n
+# AITalk - Sistema Inteligente de Atención al Cliente n8n
 
-**AITalk** es un sistema automatizado e inteligente de atención al cliente diseñado para el sector de la hostelería (cadenas de restaurantes). Basado en una arquitectura de IA agéntica, este proyecto implementa un asistente virtual capaz de gestionar reservas, responder consultas sobre el menú y alérgenos, y mantener una conversación fluida en lenguaje natural a través de Telegram.
+**AITalk** es un sistema automatizado e inteligente de atención al cliente. Basado en una arquitectura de IA agéntica, este proyecto implementa un asistente virtual capaz de gestionar reservas, responder consultas sobre el menú y alérgenos, y mantener una conversación fluida en lenguaje natural a través de Telegram.
 
 Este repositorio contiene los flujos de trabajo principales desarrollados e implementados sobre el orquestador **n8n**.
 
 ---
 
-## 🛠️ Tecnologías y Arquitectura
+## Tecnologías y Arquitectura
 
 El core de la aplicación está construido mediante una arquitectura basada en nodos modulares centralizados en n8n:
 
-*   **Orquestador:** [n8n](https://n8n.io/) (Self-hosted local).
-*   **Cerebro del Agente (LLM):** Mistral AI por su baja latencia, disponibilidad y alta capacidad de compresión.
+*   **Orquestador:** [n8n](https://n8n.io/) Self-hosted local.
+*   **Cerebro del Agente IA:** Mistral AI por su baja latencia, disponibilidad y alta capacidad de compresión.
 *   **Base de Datos:** [PostgreSQL](https://www.postgresql.org/).
 *   **Gestor de Calendario:** Google Calendar API.
 *   **Interfaz de Usuario:** Telegram Bot API.
-*   **Voz a Texto / Texto a Voz (Opcional):** Gemini 3.1 flash-lite y ElevenLabs.
+*   **Voz a Texto / Texto a Voz, nuestro nice to have:** Gemini 3.1 flash-lite y ElevenLabs.
 
 ---
 
-## ✨ Características Principales
+## Características Principales
 
 *   **Interfaz Conversacional Natural:** Integración directa con Telegram, permitiendo interactuar tanto por mensajes de texto como por audios.
 *   **Agente Inteligente Autónomo:** Uso de un nodo AI Agent de n8n configurado con herramientas para tomar decisiones y ejecutar acciones en tiempo real sin intervención humana.
@@ -32,7 +32,7 @@ El core de la aplicación está construido mediante una arquitectura basada en n
 
 ---
 
-## 🏗️ Estructura del Flujo de n8n
+## Estructura del Flujo de n8n
 
 El flujo de trabajo principal de AITalk se divide en los siguientes módulos lógicos:
 
@@ -41,13 +41,13 @@ El flujo de trabajo principal de AITalk se divide en los siguientes módulos ló
 3.  **Postgres Chat Memory:** Módulo de memoria permanente que almacena el contexto de las sesiones.
 4.  **Tools:**
     *   `Google Calendar Tool`: Crear y eliminar eventos.
-    *   `PostgreSQL Select`: Ejecutar queries dinámicas para consultar información (menú, disponibilidad local).
+    *   `PostgreSQL Select`: Ejecutar queries dinámicas para consultar información.
     *   `PostgreSQL Execute`: Inserción de nuevos clientes y confirmación de reservas en BBDD.
 5.  **Output:** Formulación de la respuesta en texto natural y envío al usuario final a través del bot de Telegram.
 
 ---
 
-## 👨‍💻 Autores
+## Autores
 
 Proyecto de desarrollo para el **CFGS Administració de Sistemes Informàtics i Xarxes (ASIX2)** - Curso 2025-2026.
 *Institut Puig Castellar - Santa Coloma de Gramenet*
